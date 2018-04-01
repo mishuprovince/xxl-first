@@ -73,7 +73,7 @@ def makeWebhookResult(data):
         return {}
 
     item = channel.get('item')
-    location = channel.get('location')
+    location = channel.get('geo-city')
     units = channel.get('units')
     if (location is None) or (item is None) or (units is None):
         return {}
